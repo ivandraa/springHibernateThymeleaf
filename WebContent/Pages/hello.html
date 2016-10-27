@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Ivandra Cakep</title>
+
+<style>
+body {
+ font-size: 20px;
+ color: teal;
+ font-family: Calibri;
+}
+
+td {
+ font-size: 15px;
+ color: black;
+ width: 2500px;
+ height: 22px;
+ text-align: center;
+}
+.heading {
+ font-size: 18px;
+ color: white;
+ font: bold;
+ background-color: orange;
+ border: thick;
+}
+</style>
+
+
+</head>
+
+<body>
+
+	<table border="1" >
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Jumlah</th>
+	</tr>
+	
+	<tr th:each="itemList : ${itemList}">
+		<td th:text="${itemList.item_code}"></td>
+		<td th:text="${itemList.item_name}"></td>
+		<td th:text="${itemList.qty}"></td>			
+	</tr>
+	
+	<tr>
+		<a href="Hello2">Pindah Ke Item Master Add</a>
+	</tr>
+		
+	
+	</table>
+
+	<center><b>Ivandra Oktovan Cakepp</b></center>
+
+
+
+</body>
+</html>
